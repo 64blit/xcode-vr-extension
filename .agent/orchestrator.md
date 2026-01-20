@@ -1,0 +1,22 @@
+# Project Status
+
+- [ ] Project Setup & Base Architecture [feature/setup]
+    - Initialize Xcode Project (App + Extension targets).
+    - Set up WebKit integration.
+    - Set up Three.js build pipeline (Vite/Webpack).
+- [ ] File System Traversal & Parsing [feature/filesystem]
+    - Implement recursive file walker.
+    - Implement .gitignore parsing.
+    - Create basic Dependency Parser.
+- [ ] 3D Visualization Core [feature/visualization]
+    - Create Three.js scene manager.
+    - Implement Node Graph generation from JSON.
+    - Add navigation controls (Orbit/Fly).
+- [ ] AI Metadata Integration [feature/ai-metadata]
+    - Implement AI Service client (OpenAI).
+    - Create metadata bubbles/tooltips in 3D.
+- [ ] Dependency Mapping & Filtering [feature/dependencies]
+    - Draw lines between dependent nodes.
+    - Implement visual filters.
+- [ ] VR Support [feature/vr]
+    - Enable WebXR or VR-like camera controls.
