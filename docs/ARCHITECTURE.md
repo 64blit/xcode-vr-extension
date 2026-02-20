@@ -66,14 +66,16 @@ graph TD
 ## 4. Technology Stack Details
 
 ### Backend (Swift)
--   **Language**: Swift 5+
--   **UI Framework**: SwiftUI (for the native app shell).
+-   **Language**: Swift 5.9+ (Modern Concurrency).
+-   **UI Framework**: SwiftUI (macOS 14+ Target).
 -   **WebView**: `WKWebView` (WebKit).
 -   **Networking**: `URLSession` for AI API calls.
+-   **Build System**: Swift Package Manager (`Package.swift`) for modules, Xcode for final app assembly.
 
 ### Frontend (Web/Three.js)
--   **Language**: JavaScript/TypeScript (bundled).
+-   **Language**: TypeScript 5.0+.
 -   **Library**: Three.js (r150+).
+-   **Bundler**: Vite (latest).
 -   **Text**: `Troika-Three-Text` or HTML overlays for labels.
 -   **Controls**: `OrbitControls`, `FlyControls`.
 -   **VR**: `WebXR` (via Three.js capabilities, limited by WebView support, falling back to simulated VR camera if needed).
@@ -104,13 +106,14 @@ RepoVerse/
 │   │   ├── Services/   # File, AI, Parsing services
 │   │   ├── ViewModels/
 │   │   └── Views/      # SwiftUI Views
-│   └── Resources/      # Assets
+│   └── Resources/      # Assets (including bundled Web/dist)
 ├── Extension/          # Xcode Source Editor Extension
 │   └── SourceEditorExtension.swift
 ├── Web/                # Frontend Code
 │   ├── src/
-│   │   ├── index.js
-│   │   └── scene.js
-│   └── dist/           # Bundled JS to be embedded in App
-└── Shared/             # Shared data models
+│   │   ├── main.ts
+│   │   └── scene.ts
+│   ├── vite.config.ts
+│   └── package.json
+└── Shared/             # Shared data models (Swift Package)
 ```

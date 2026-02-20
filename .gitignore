@@ -1,0 +1,28 @@
+# Xcode
+.DS_Store
+*.swp
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+DerivedData/
+.build/
+.swiftpm/
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# Node
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Web Build Output
+App/Resources/dist/
+
+# Miscellaneous
+.vscode/
+.idea/
