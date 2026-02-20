@@ -22,5 +22,10 @@ let package = Package(
             dependencies: ["RepoVerseShared"],
             path: "App/Sources/RepoVerseApp"
         ),
+        .testTarget(
+            name: "RepoVerseSharedTests",
+            dependencies: ["RepoVerseShared"],
+            path: "Shared/Tests/RepoVerseSharedTests"
+        ),
     ]
 )
